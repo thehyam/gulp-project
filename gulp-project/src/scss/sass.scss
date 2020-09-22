@@ -1,0 +1,50 @@
+//Import
+@import 'colours';
+
+.mainContent {
+    background-color: $lightgrey;
+}
+//Navbar 
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: $lightgreen;
+    }
+  
+    li { display: inline-block; }
+  
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      color: $darkgrey;
+    }
+  }
+
+//Boxed content
+@mixin boxes($circle: false) {
+    padding: 20px;
+    font-family: 'Montserrat';
+    
+    @if $circle {
+        border-radius: 5px;
+    } else {
+        border-radius: 0%;
+    }
+}
+
+#box1 {
+    @include boxes($circle: true);
+}
+#box2 {
+    @include boxes;
+}
+#box3 {
+    @extend #box1;
+}
+// Footer layout 
+.footer h2 {
+color: $darkgreen;
+}

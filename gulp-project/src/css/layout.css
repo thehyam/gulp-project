@@ -1,0 +1,28 @@
+/*Images*/
+.center {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+}
+footer {
+    padding: 30px;
+}
+/*Desktop*/
+@media screen and (min-width: 601px) {
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+          }
+          
+          .flex-container > div {
+           text-align: center;
+          }
+  }
+  
+  /*Mobile*/
+  @media screen and (max-width: 600px) {
+p {
+    font-size: 18px;
+}
+  }
